@@ -1,3 +1,4 @@
+import { CrudComponent } from './components/crud/crud.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DataBindingComponent } from './data-binding/data-binding.component';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'test-if-for',
     component: NgIfNgForComponent
+  },
+  {
+    path: 'listphotos',
+    component: CrudComponent
   }
 ];
 
