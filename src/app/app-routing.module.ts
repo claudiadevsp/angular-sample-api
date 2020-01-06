@@ -7,6 +7,10 @@ import { NgIfNgForComponent } from './ng-if-ng-for/ng-if-ng-for.component';
 
 const routes: Routes = [
   {
+    path: 'lazy',
+    loadChildren: () => import('./modules/lazyloading/lazyloading.module').then(m => m.LazyloadingModule)
+  },
+  {
     path: 'primary-component',
     component: DataBindingComponent
   },

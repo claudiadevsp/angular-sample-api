@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crud.component.css']
 })
 export class CrudComponent implements OnInit {
-  images: Images;
   error: any;
+  images: any;
 
   constructor(private crudService: CrudService) {
     this.getter();
